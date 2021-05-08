@@ -447,7 +447,7 @@ footer {
 }
 
 /* for Surface Dur Dual Screen */
-@media screen and (width: 1114px){
+@media screen and (max-width: 1114px) and (min-width: 1114px){
     
     header {
         position: fixed;
@@ -605,10 +605,10 @@ footer {
     }
 
     .app {
-        padding: 50px 20px;
-        text-align: center;
+        padding: 20px 20px;
         background-color: red;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .app_wrap {
@@ -618,25 +618,36 @@ footer {
 
     .app .app_item {
         margin: 0;
+        text-align: left;
     }
 
     .app .app_item .descript {
-        margin-top: 700px;
-        text-align: left;
+        width: 90%;
+        margin: 670px auto 10px auto;
     }
 
     .app .app_img {
         height: 0;
     }
-
+    
     .app .app_img  img{
         float: right;
         top: -850px;
         position: relative;
     }
- 
+    
+    .how_to {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .how .inner .how_to:nth-of-type(1) {
         margin-right: 10px;
+    }
+
+    .faq {
+        padding-bottom: 50px;
     }
 
     .faq .inner .txt {
@@ -645,27 +656,38 @@ footer {
     }
 
     .faq .txt ul p{
-        padding-bottom: 50px;
+        padding-bottom: 20px;
+    }
+
+    .faq .txt ul p:last-child{
+        padding-bottom: 0;
     }
 
     .faq .more {
-        width: 50%;
-        margin-top: 100px;
-        padding: 20px;
+        width: 30%;
+        margin-top: 50px;
+        padding: 5px 10px;
+    }
+
+    .news {
+        padding-bottom: 50px;
     }
 
     .news .txt {
         padding: 60px 20px;
-        text-align: center;
     }
 
     .news .txt ul li:nth-child(2n){
-        padding-bottom: 30px;
+        padding-bottom: 15px;
     }
 
     #contact p {
-        width: 50%;
-        padding: 20px;
+        width: 30%;
+        padding: 5px 10px;
+    }
+
+    .contact_btn {
+        padding-bottom: 50px;
     }
 
     .footer_logo {
@@ -678,22 +700,6 @@ footer {
 
 }
 /* for Dual Reset */
-@media screen and (max-width: 1113px){
-    
-    header {
-        position: unset;
-    }
-
-    body {
-        width: 100%;
-        margin: 0;
-    }
-    
-    .triangles {
-        display: hidden;
-    }
-
-}
 
 @media screen and (max-width: 768px) {
     header a.logo {
@@ -803,28 +809,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 540px) and (min-width: 540px){
     header a.logo {
         top: 10px;
         left: 10px;
-    }
-
-    .font2 {
-        text-align: center;
-    }
-
-    .font2::after {
-        content: "";
-        background: #75a9ff;
-        height: 2px;
-        width: 100%;
-        display: inline-block;
-        vertical-align: left;
-        margin-left: 0;
-    }
-
-    .font2 {
-        text-align: center;
     }
 
     .font2::after {
@@ -842,7 +830,7 @@ footer {
     }
 
     .section {
-        padding: 50px 0 100px 0;
+        padding: 50px 0;
     }
 
     .section:nth-of-type(odd)::after {
@@ -870,10 +858,9 @@ footer {
     }
 
     .app {
-        padding: 50px 20px 0 20px;
-        text-align: center;
+        padding:25px;
         background-color: red;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .app_wrap {
@@ -885,45 +872,50 @@ footer {
     }
 
     .app .app_item .descript {
-        margin-top: 600px;
-        padding-bottom: 30px;
-        text-align: left;
+        width: 90%;
+        margin: 600px auto 20px auto;
     }
 
     .app .app_img {
         height: 0;
         position: relative;
+        margin: 0 auto;
     }
 
     .app .app_img  img{
         float: right;
-        top: -850px;
+        top: -780px;
         left: 0;
         position: absolute;
     }
  
-    .how .inner .how_to:nth-of-type(1) {
-        margin-right: 10px;
+    .how_to {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .faq .inner .txt {
-        width: 80%;
-        padding: 60px 40px;
+        width: 75%;
+        padding: 30px 40px;
     }
 
     .faq .txt ul p{
-        padding-bottom: 50px;
+        padding-bottom: 15px;
+    }
+
+    .faq .txt ul p:last-child{
+        padding-bottom: 0;
     }
 
     .faq .more {
-        width: 50%;
-        margin-top: 100px;
-        padding: 20px;
+        width: 30%;
+        margin-top: 50px;
+        padding: 5px 10px;
     }
 
     .news .txt {
-        padding: 60px 20px;
-        text-align: center;
+        padding: 30px 25px;
     }
 
     .news .txt ul li:nth-child(2n){
@@ -931,8 +923,11 @@ footer {
     }
 
     #contact p {
-        width: 50%;
-        padding: 20px;
+        width: 30%;
+        padding: 5px 10px;
+    }
+    .contact_btn {
+        padding-bottom: 50px;
     }
 
     .footer_logo {
